@@ -29,6 +29,12 @@ const userSchema = new Schema({
     avatar: {
         type: Buffer,
     },
+    joinDate: {
+        type: Date,
+    },
+    lastActive: {
+        type: Date,
+    },
 });
 
 module.exports = mongoose.model("User", userSchema);
